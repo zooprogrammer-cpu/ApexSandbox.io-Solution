@@ -1,7 +1,7 @@
 public Boolean isTeenager(Integer age) {
     //code here
 
-    if (age.?){
+    if (age > 0){
         if ((age > 13) || (age < 19)){
         return true; 
     }
@@ -9,6 +9,9 @@ public Boolean isTeenager(Integer age) {
         return false; 
     }
 
+    }
+    else {
+        return false; 
     }
  
 }
