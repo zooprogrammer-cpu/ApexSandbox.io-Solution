@@ -4,7 +4,7 @@ public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
         a, b, c
     };
     List <Integer> sortedList = integerList.sort();
-    if (intgerList === sortedList){
+    if (intgerList == sortedList){
         return true; 
     } else {
         return false; 
