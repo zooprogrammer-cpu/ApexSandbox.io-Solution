@@ -12,6 +12,9 @@ public static Integer findLargest(Integer num1, Integer num2, Integer num3) {
             largerNum = num3;
         }
     }
+    if (num1 == 0 && num2 == 0 && num3 ==0){
+        largerNum = 0;
+    }
     return largerNum; 
   
 }
