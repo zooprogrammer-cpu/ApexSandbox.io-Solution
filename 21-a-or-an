@@ -3,11 +3,9 @@ public String aOrAn(String word) {
 
 String lowerCaseTest = word.toLowerCase();
 
-System.debug(lowerCaseTest);
+String vowels = 'aeiou';
 
 Boolean found = vowels.contains(lowerCaseTest.split('')[0]);
-
-System.debug(found);
 
 return found ? true: false; 
 }
