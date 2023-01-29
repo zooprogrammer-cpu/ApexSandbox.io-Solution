@@ -7,5 +7,5 @@ String vowels = 'aeiou';
 
 Boolean found = vowels.contains(lowerCaseTest.split('')[0]);
 
-return found ? true: false; 
+return found ? 'an ' + word: 'a ' + word; 
 }
