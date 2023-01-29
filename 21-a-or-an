@@ -1,11 +1,10 @@
 public String aOrAn(String word) {
     //code here
+    String lowerCaseTest = word.toLowerCase();
 
-String lowerCaseTest = word.toLowerCase();
+    String vowels = 'aeiou';
 
-String vowels = 'aeiou';
+    Boolean found = vowels.contains(lowerCaseTest.split('')[0]);
 
-Boolean found = vowels.contains(lowerCaseTest.split('')[0]);
-
-return found ? 'an ' + word: 'a ' + word; 
+    return found ? 'an ' + word: 'a ' + word; 
 }
