@@ -1,13 +1,17 @@
 public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
     //code here
     List<Integer> integerList = new <List> ( a, b, c);
-       
-    List <Integer> sortedList = integerList.sort();
-    if (intgerList == sortedList){
+    integerList.sort(); 
+    List<Integer> sortedList = integerList; 
+    if (integerList == sortedList){
         return true; 
-    } else {
+    } else{
         return false; 
     }
+
+
+       
+
 
 
 }
