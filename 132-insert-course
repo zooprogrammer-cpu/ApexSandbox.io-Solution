@@ -14,13 +14,15 @@ public Id insertCourse(String name, String details, Integer credits) {
         plValues.add(pl.value);
     }
     System.debug('Picklist values: ' + plValues);
+
+    Boolean found = plValues.contains(creditString);
     // insert course
    
-    // if (plValues.contains(creditString) == true){
+    if (found == true){
         apxio__Course__c course = new apxio__Course__c (Name = name, apxio__Course_Details__c = details, apxio__Credits__c = creditString);
         insert course;
 
-    // }
+    }
     return course.Id; 
  
 }
