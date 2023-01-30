@@ -1,7 +1,23 @@
 public Id insertCourse(String name, String details, Integer credits) {
     // code here
-    apxio__Course__c course = new apxio__Course__c (Name = name, apxio__Course_Details__c = details, apxio__Credits__c = String.valueOf(credits));
-    insert course; 
-    return course.Id; 
+    // Describe the apxio__Course__c.apxio__Credits__c field
+    Schema.DescribeFieldResult fieldResult = apxio__Course__c.apxio__Credits__c.getDescribe(); 
+    // Get picklist values from field description 
+    List <Schema.PicklistEntry> pickListValuesList = fieldResult.getPickListValues();
+    System.debug(pickListValuesList);
+    List<String> plValues = new List<String>();
+    for (Schema.PicklistEntry pl : pickListValuesList) {
+        plValues.add(pl.value);
+    }
+    System.debug('Picklist values: ' + plValues);
+
+    if (credits.contains(plValues)){
+          apxio__Course__c course = new apxio__Course__c (Name = name, apxio__Course_Details__c = details, apxio__Credits__c = String.valueOf(credits));
+            insert course; 
+            return course.Id; 
+
+    }
+
+  
 
 }
