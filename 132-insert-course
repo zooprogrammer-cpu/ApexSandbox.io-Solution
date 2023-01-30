@@ -15,7 +15,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     }
     System.debug('Picklist values: ' + plValues);
     // insert course
-    Boolean found = pickListValuesList.contains(creditString);
+    Boolean found = plValues.contains(creditString);
     System.debug(found);
 
     apxio__Course__c course = new apxio__Course__c (Name = name, apxio__Course_Details__c = details, apxio__Credits__c = creditString);
