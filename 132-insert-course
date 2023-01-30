@@ -16,7 +16,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     System.debug('Picklist values: ' + plValues);
 
     Boolean found = plValues.contains(creditString);
-    // insert course
+    // insert course if credit is fund in picklist
     if (found == false){
         return null;
     }
