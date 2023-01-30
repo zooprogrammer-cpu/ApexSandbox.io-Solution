@@ -18,9 +18,9 @@ public Id insertCourse(String name, String details, Integer credits) {
    
     if (plValues.contains(creditString)){
         apxio__Course__c course = new apxio__Course__c (Name = name, apxio__Course_Details__c = details, apxio__Credits__c = creditString);
-        
+            insert course;
+
     }
-    insert course;
     return course.Id; 
 
     
