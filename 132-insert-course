@@ -5,23 +5,19 @@ public Id insertCourse(String name, String details, Integer credits) {
     // Get picklist values from field description 
     List <Schema.PicklistEntry> pickListValuesList = fieldResult.getPickListValues();
     System.debug(pickListValuesList);
-
-    // convert credits to string
-    String creditsString = String.valueOf(credits);
-
     List<String> plValues = new List<String>();
     for (Schema.PicklistEntry pl : pickListValuesList) {
         plValues.add(pl.value);
     }
     System.debug('Picklist values: ' + plValues);
 
-    if (pickListValuesList.contains()){
-           apxio__Course__c course = new apxio__Course__c (Name = name, apxio__Course_Details__c = details, apxio__Credits__c = String.valueOf(credits));
-            insert course; 
 
-    }
+        apxio__Course__c course = new apxio__Course__c (Name = name, apxio__Course_Details__c = details, apxio__Credits__c = String.valueOf(credits));
+        insert course; 
+        return course.Id; 
 
-    return course.Id; 
+    
 
+  
 
 }
