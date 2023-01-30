@@ -5,5 +5,6 @@ insert stud;
 
 List<apxio__Student__c> studList = [SELECT Id, apxio__Registration_Number__c FROM apxio__Student__c WHERE Id = : stud.Id LIMIT 1];
 System.debug(studList[0].apxio__Registration_Number__c);
+return studList[0].apxio__Registration_Number__c;
     
 }
