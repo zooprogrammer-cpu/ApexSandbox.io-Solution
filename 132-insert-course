@@ -15,8 +15,8 @@ public Id insertCourse(String name, String details, Integer credits) {
     }
     System.debug('Picklist values: ' + plValues);
 
-    if (pickListValuesList.contains(creditsString)){
-           apxio__Course__c course = new apxio__Course__c (Name = name, apxio__Course_Details__c = details, apxio__Credits__c = creditsString);
+    if (pickListValuesList.contains()){
+           apxio__Course__c course = new apxio__Course__c (Name = name, apxio__Course_Details__c = details, apxio__Credits__c = String.valueOf(credits));
             insert course; 
 
     }
