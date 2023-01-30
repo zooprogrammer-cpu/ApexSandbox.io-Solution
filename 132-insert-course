@@ -23,6 +23,10 @@ public Id insertCourse(String name, String details, Integer credits) {
         insert course;
 
     //}
-    return course.Id; 
+    if (found == true){
+            return course.Id; 
+
+
+    }
  
 }
