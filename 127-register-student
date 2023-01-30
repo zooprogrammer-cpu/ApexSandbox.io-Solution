@@ -1,8 +1,8 @@
 public String registerStudent(String name, String phone, String email) {
     // code here
     apxio__Student__c stud = new apxio__Student__c (Name = name, 
-    apxio__Student__c.apxio__Phone__c = phone, 
-    apxio__Student__c.apxio__Email__c = email);
+    apxio__Phone__c = phone, 
+    apxio__Email__c = email);
 
     insert stud; 
     
