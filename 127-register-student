@@ -1,14 +1,9 @@
 public String registerStudent(String name, String phone, String email) {
     // code here
-    apxio__Student__c stud = new apxio__Student__c (Name = name, 
-    apxio__Phone__c = phone, 
-    apxio__Email__c = email);
+apxio__Student__c stud = new apxio__Student__c(Name = name, apxio__Email__c = email, apxio__Phone__c = phone);
+insert stud;
 
-    insert stud; 
+List<apxio__Student__c> studList = [SELECT Id, apxio__Registration_Number__c FROM apxio__Student__c WHERE Id = : stud.Id LIMIT 1];
+System.debug(studList[0].apxio__Registration_Number__c);
     
-    List <apxio__Student__c> student = [SELECT Id, apxio__Registration_Number__c FROM apxio__Student__c
-    WHERE Id =: stud.Id];
-    return student.apxio__Registration_Number__c;
-    
-
 }
