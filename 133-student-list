@@ -4,7 +4,7 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
 
 
 
-    for (String student : studList) {
+    for (apxio__Student__c student : studList) {
         for (String name : studentNames){
                 student.Name = name;
         }
