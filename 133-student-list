@@ -6,7 +6,10 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
 
     for (apxio__Student__c student : studList) {
         for (String name : studentNames){
-                student.Name = name;
+            for (String email : studentEmails){
+                    student.Name = name;
+                    student.apxio__Email__c = email; 
+            }
         }
     }
     insert studList;
