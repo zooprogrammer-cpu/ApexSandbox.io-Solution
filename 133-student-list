@@ -1,0 +1,11 @@
+public void insertStudents(List<String> studentNames, List<String> studentEmails) {
+    // code here
+    List<apxio__Student__c> studList = new List<apxio__Student__c>();
+
+    for (String student : studentNames) {
+        student.Name = studentNames;
+        studList.add(student);
+    }
+    insert studList;
+
+}
