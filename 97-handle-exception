@@ -5,11 +5,11 @@ public String divide(Integer a, Integer b){
 
     try {
         Decimal dividedVal = aDec/bDec;
-        return String.valueOf(dividedVal) ; 
+        return String.valueOf(dividedVal); 
         
     }
     catch (Exception e){
-        System.debug(e.getMessage()); 
+        return (e.getMessage()); 
     }
    
 }
