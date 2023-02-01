@@ -2,21 +2,21 @@ public List<Account> checkAccounts(List<Account> accounts)
 {
     // code here 
 
-    if (accounts.size() == null){
-        throw new IllegalArguemntException('accounts should not be null');
-    }
-    
-    for (Account acc : accounts){
-        if (acc.BillingCity != null){
-            return accounts; 
-        }
-    }
+    // if (accounts.size() == null){
+    //     throw new IllegalArguemntException('accounts should not be null');
+    // }
 
-    for (Account acc : accounts){
-        if (acc.BillingCity == null){
-            throw new AccountException;
-        }
-    }
+    // for (Account acc : accounts){
+    //     if (acc.BillingCity != null){
+    //         return accounts; 
+    //     }
+    // }
+
+    // for (Account acc : accounts){
+    //     if (acc.BillingCity == null){
+    //         throw new AccountException;
+    //     }
+    // }
 }
 
 //do not remove the following custom-defined exception
