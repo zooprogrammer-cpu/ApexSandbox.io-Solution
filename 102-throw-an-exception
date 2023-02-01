@@ -17,11 +17,11 @@ public List<Account> checkAccounts(List<Account> accounts)
         return accounts; 
     }
 
-    // for (Account acc : accounts){
-    //     if (acc.BillingCity == null){
-    //         throw new AccountException;
-    //     }
-    // }
+    for (Account acc : accounts){
+        if (acc.BillingCity == null){
+            throw new AccountException();
+        }
+    }
 }
 
 //do not remove the following custom-defined exception
