@@ -1,12 +1,15 @@
 public String divide(Integer a, Integer b){
     //code here
-    try {
-        Integer dividedVal = a/b;
-        return Integer.valueOf(dividedVal); 
+    Decimal aDec = decimal.valueOf(a);
+    Decimal bDec = decimal.valueOf(b);
 
+    try {
+        Decimal dividedVal = aDec/bDec;
+        System.debug(dividedVal) ; 
+        
     }
     catch (Exception e){
-        return e; 
+        System.debug(e); 
     }
    
 }
