@@ -5,7 +5,7 @@ public String divide(Integer a, Integer b){
 
     try {
         Decimal dividedVal = aDec/bDec;
-        System.debug(dividedVal) ; 
+        return String.valueOf(dividedVal) ; 
         
     }
     catch (Exception e){
