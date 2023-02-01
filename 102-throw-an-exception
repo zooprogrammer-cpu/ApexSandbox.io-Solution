@@ -1,0 +1,19 @@
+public List<Account> checkAccounts(List<Account> accounts)
+{
+    // code here 
+    return accounts ? null : throw IllegalArguemntException('accounts should not be null'); 
+    for (Account acc : accounts){
+        if (acc.BillingCity != null){
+            return accounts; 
+        }
+    }
+
+    for (Account acc : accounts){
+        if (acc.BillingCity == null){
+            throw AccountException;
+        }
+    }
+}
+
+//do not remove the following custom-defined exception
+public class AccountException extends Exception {}
