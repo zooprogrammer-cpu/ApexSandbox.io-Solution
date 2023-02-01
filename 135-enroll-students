@@ -1,0 +1,5 @@
+public void enrollStudents(List<String> emails, String className) {
+    // code here
+    List <apxio__Class_Enrollment__c> classEnroll = new List<apxio__Class_Enrollment__c>(); 
+    List <apxio__Student__c> studentList = [SELECT Id, Name FROM apxio__Student__c WHERE apxio__Email__c IN: emails ];
+}
