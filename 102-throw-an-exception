@@ -2,17 +2,15 @@ public List<Account> checkAccounts(List<Account> accounts)
 {
     // code here 
 
-    if (accounts == null){
-        throw new IllegalArguemntException('accounts should not be null');
+    if (accounts == null) {
+        throw new IllegalArgumentException('accounts should not be null');
     }
-
-    for (Account acc : accounts){
-        if (acc.BillingCity == null){
+    for (Account a : accounts) {
+        if (a.BillingCity == null) {
             throw new AccountException('Invalid BillingCity');
         }
     }
-
-    return accounts; 
+    return accounts;
 }
 
 //do not remove the following custom-defined exception
