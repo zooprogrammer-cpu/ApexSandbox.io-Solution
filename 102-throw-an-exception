@@ -6,16 +6,16 @@ public List<Account> checkAccounts(List<Account> accounts)
     //     throw new IllegalArguemntException('accounts should not be null');
     // }
 
-    for (Account acc : accounts){
-        if (acc.BillingCity != null){
-            Boolean returnList = true;  
-        }
+    // for (Account acc : accounts){
+    //     if (acc.BillingCity != null){
+    //         Boolean returnList = true;  
+    //     }
         
-    }
+    // }
 
-    if (returnList == true){
-        return accounts; 
-    }
+    // if (returnList == true){
+    //     return accounts; 
+    // }
 
     for (Account acc : accounts){
         if (acc.BillingCity == null){
