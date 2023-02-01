@@ -10,7 +10,11 @@ public List<Account> checkAccounts(List<Account> accounts)
         if (acc.BillingCity != null){
             Boolean returnList = true;  
         }
-        return returnList;
+        
+    }
+
+    if (returnList == true){
+        return accounts; 
     }
 
     // for (Account acc : accounts){
