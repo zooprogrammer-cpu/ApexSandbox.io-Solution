@@ -8,8 +8,9 @@ public List<Account> checkAccounts(List<Account> accounts)
 
     for (Account acc : accounts){
         if (acc.BillingCity != null){
-            return accounts; 
+            Boolean returnList = true;  
         }
+        return returnList;
     }
 
     // for (Account acc : accounts){
