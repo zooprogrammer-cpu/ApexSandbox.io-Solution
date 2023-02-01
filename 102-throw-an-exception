@@ -1,7 +1,11 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     // code here 
-    return accounts ? null : throw IllegalArguemntException('accounts should not be null'); 
+
+    if (accounts.size() == null){
+        throw new IllegalArguemntException('accounts should not be null');
+    }
+    
     for (Account acc : accounts){
         if (acc.BillingCity != null){
             return accounts; 
