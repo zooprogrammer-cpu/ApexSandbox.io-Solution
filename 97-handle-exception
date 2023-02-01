@@ -4,7 +4,7 @@ public String divide(Integer a, Integer b){
     // Decimal bDec = decimal.valueOf(b);
 
     try {
-        Integer dividedVal = aDec/bDec;
+        Integer dividedVal = a/b;
         return String.valueOf(dividedVal); 
         
     }
