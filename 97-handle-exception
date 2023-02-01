@@ -1,10 +1,10 @@
 public String divide(Integer a, Integer b){
     //code here
-    Decimal aDec = decimal.valueOf(a);
-    Decimal bDec = decimal.valueOf(b);
+    // Decimal aDec = decimal.valueOf(a);
+    // Decimal bDec = decimal.valueOf(b);
 
     try {
-        Decimal dividedVal = aDec/bDec;
+        Integer dividedVal = aDec/bDec;
         return String.valueOf(dividedVal); 
         
     }
