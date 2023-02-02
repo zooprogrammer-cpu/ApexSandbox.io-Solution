@@ -1,6 +1,6 @@
 public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
    // Code here
-   List<Account> accList = [SELECT Id, BillingCity FROM Account WHERE Id IN: accounts LIMIT 1];
+   List<Account> accList = [SELECT Id, BillingCity FROM Account WHERE Name IN: accounts LIMIT 1];
    return accList[0].BillingCity?.toUpperCase();
 
 }
