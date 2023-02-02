@@ -1,7 +1,7 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
     // code here
-    List <Account> acc = [SELECT Id FROM Account WHERE Id =: acc.Id];
+    //List <Account> accList = [SELECT Id FROM Account WHERE Id =: acc.Id];
     List <String> fieldOutputList = new List <String>(); 
 
     for (String field : fields){
