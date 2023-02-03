@@ -1,11 +1,17 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
     // code here
-    //List <Account> accList = [SELECT Id FROM Account WHERE Id =: acc.Id];
-    List <String> fieldOutputList = new List <String>(); 
+  // code here
 
-    for (String field : fields){
-        fieldOutputList.add(String.valueof(acc.get(field)])) ;
-    }
-    return fieldOutputList; 
+ List<String> result = new List<String>();
+
+ for(String f : fields)
+
+ {
+
+     result.add(String.valueof(acc.get(f)));
+
+ }
+
+ return result;
 }
