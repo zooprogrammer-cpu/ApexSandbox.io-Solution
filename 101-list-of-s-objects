@@ -1,19 +1,14 @@
 public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> contacts)
 {
     // code here
-
-    List<Contact> conList = new List<Contact>();
-
-    Account acc = new Account(Name = 'Salesforce');
-    accList.add(acc);
-    Contact con = new Contact(lastName = 'Taylor');
-    conList.add(con);
-
-    List<SObject> sObjectList = new List<SObject>();
-    for (Integer i = 0; i < accList.size(); i++) {
-        sObjectList.add(accList[i]);
-        sObjectList.add(conList[i]);
+    List <SObject> sObjectList = new List<SObject>; 
+    if (accounts != null ){
+        sObjectList.add(accounts);
     }
-    System.debug(sObjectList);
+    if (contacts != null){
+        sObjectList.add(contacts);
+    }
     return sObjectList;
+
+
 }
