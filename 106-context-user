@@ -7,6 +7,10 @@ public Map<String,String> getContextUserInformation(){
     String email = UserInfo.getUserEmail();
     String userType = UserInfo.getUserType();
 
+    if mapName == null {
+        return null;
+    }
+
     mapName.put('UserName', name);
     mapName.put('Type', userType);
     mapName.put('ProfileId', profileId);
