@@ -2,9 +2,10 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
 {
     // code here
     List<SObject> list = new List <SObject>(); 
-    for (i = 0 ; i < accounts.size() ; i++){
-        list.add(accounts[i]);
-        list.add(contacts[i])
+    for (Integer i = 0; i < accounts.size(); i++) {
+        list.add(accounts[0]);
+        list.add(contacts[0]);
+        
     }
     return list; 
 
