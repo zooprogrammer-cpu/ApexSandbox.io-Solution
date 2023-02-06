@@ -8,6 +8,8 @@ public void setAccountRating(Account a) {
     }
     else if (a.AnnualRevenue <= 100000){
         a.Rating = "Cold";
+    } else{
+        a.Rating = "Cold";
     }
   
   
