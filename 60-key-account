@@ -3,7 +3,7 @@ public Boolean isKeyAccount(Account a) {
     if (a.Industry == 'Technology' && a.AnnualRevenue >= 800000){
         return true; 
     }
-    else {
+    else (a.Industry == 'Technology' && a.AnnualRevenue < 800000) {
         return false; 
     }
 
