@@ -1,0 +1,7 @@
+public Boolean isKeyAccount(Account a) {
+    //code here
+    if (a.Industry == 'Banking' && a.AnnualRevenue < 600000){
+        return true; 
+    }
+    else return false; 
+}
