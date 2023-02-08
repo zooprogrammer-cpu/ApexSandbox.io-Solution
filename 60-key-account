@@ -1,7 +1,16 @@
 public Boolean isKeyAccount(Account a) {
     //code here
-    if (a.Industry == 'Banking' && a.AnnualRevenue < 600000){
+    if (a.Industry == 'Banking' && a.AnnualRevenue > 600000){
         return true; 
     }
-    else return false; 
+    else {
+        return false; 
+    }
+
+    if (a.Industry == 'Technology' && a.AnnualRevenue > 800000){
+        return true;
+    }
+    else {
+        return false;
+    }
 }
