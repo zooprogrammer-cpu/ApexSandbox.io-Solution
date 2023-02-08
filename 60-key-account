@@ -7,10 +7,10 @@ public Boolean isKeyAccount(Account a) {
         return false; 
     }
 
-    // if (a.Industry == 'Technology' && a.AnnualRevenue >= 800000){
-    //     return true;
-    // }
-    // else {
-    //     return false;
-    // }
+    if (a.Industry == 'Retail' && a.AnnualRevenue >= 2000000){
+        return true;
+    }
+    else {
+        return false;
+    }
 }
