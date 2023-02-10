@@ -4,6 +4,7 @@ public void escalateIfMeetsCriteria(Case c) {
     c.Reason = 'Breakdown'&& c.Status = 'In Progress'
     ){
         c.IsEscalated = true; 
+        return c.IsEscalated;
     }
 
 
