@@ -5,7 +5,6 @@ public void escalateIfMeetsCriteria(Case c) {
     ){
         c.IsEscalated = true; 
     }
-    return c.IsEscalated;
 
 
 
