@@ -1,0 +1,10 @@
+public Boolean sameParent(Contact c, Opportunity opp) {
+    //code here
+    List <Account> accOfContact = [SELECT Id FROM Account WHERE Id =: c.Account.Id LIMIT 1];
+    List <Account> accOfOpp = [SELECT Id FROM Account WHERE Id =:opp.Account.Id LIMIT 1];
+
+    if (accOfContact[0] == accOfOpp[0]){
+        return true
+    }
+
+}
