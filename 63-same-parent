@@ -3,7 +3,7 @@ public Boolean sameParent(Contact c, Opportunity opp) {
     List <Account> accOfContact = [SELECT Id FROM Account WHERE Id =: c.Account.Id LIMIT 1];
     List <Account> accOfOpp = [SELECT Id FROM Account WHERE Id =:opp.Account.Id LIMIT 1];
 
-    if (accOfContact[0] == accOfOpp[0]){
+    if (accOfContact[0].Id == accOfOpp[0].Id){
         return true;
     }
 
