@@ -1,0 +1,12 @@
+public static Integer arraySum(List<Integer> numbers) {
+    //code here
+    List<Integer> intList = new List<Integer>{1,2,3,4};
+    Integer sum =0; 
+
+    for (Integer i = 0; i < intList.size(); i++) {
+        sum += intList[i];
+    }
+    //System.debug('The sum is:'+ sum);
+    return sum; 
+
+}
