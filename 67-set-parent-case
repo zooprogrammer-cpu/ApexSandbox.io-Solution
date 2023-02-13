@@ -4,7 +4,7 @@ public void linkParent(Case c1, Case c2) {
     if (c1.ContactId == null || c2.ContactId == null){
         return; 
     }
-    if (c1.ContactId!=c2.ContactId){
+    if (c1.ContactId != c2.ContactId){
         return; 
     }
     if (c1.ContactId == c2.ContactId && c1.CreatedDate > c2.CreatedDate){
