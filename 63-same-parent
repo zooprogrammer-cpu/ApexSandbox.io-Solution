@@ -12,7 +12,7 @@ public Boolean sameParent(Contact c, Opportunity opp) {
     //     matchingIds.add(opp.AccountId);
     // }
     // System.debug('The opportunties and contacts that have the same account are:' + matchingIds);
-    if ( c.AccountId == opp.AccountId){
+    if ( c.AccountId !=null && (c.AccountId == opp.AccountId)){
         return true;
     }
     else return false; 
