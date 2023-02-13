@@ -3,14 +3,17 @@ public Boolean sameParent(Contact c, Opportunity opp) {
     List <Contact> conList = [SELECT Id, AccountId, Account.Name FROM Contact WHERE Id =:c.Id LIMIT 1];
     List <Opportunity> oppList = [SELECT Id, AccountId, Account.Name FROM Opportunity WHERE Id =:opp.Id LIMIT 1];
 
-    Set<Id> accountsIds = new Set<Id>();
-    Set<Id> matchingIds = new Set<Id>(); 
-    for (Contact con : conList) {
-        accountsIds.add(con.AccountId);
+    // Set<Id> accountsIds = new Set<Id>();
+    // Set<Id> matchingIds = new Set<Id>(); 
+    // for (Contact con : conList) {
+    //     accountsIds.add(con.AccountId);
+    // }
+    // for (Opportunity opp : [SELECT Id, AccountId, Account.Name FROM Opportunity WHERE AccountId IN: accountsIds]) {
+    //     matchingIds.add(opp.AccountId);
+    // }
+    // System.debug('The opportunties and contacts that have the same account are:' + matchingIds);
+    if ( conList[0].AccountId == oppList[0].AccountId){
+        return true;
     }
-    for (Opportunity opp : [SELECT Id, AccountId, Account.Name FROM Opportunity WHERE AccountId IN: accountsIds]) {
-        matchingIds.add(opp.AccountId);
-    }
-    System.debug('The opportunties and contacts that have the same account are:' + matchingIds);
-
+    else return false; 
 }
