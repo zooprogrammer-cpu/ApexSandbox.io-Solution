@@ -1,7 +1,7 @@
 public Boolean sameParent(Contact c, Opportunity opp) {
     //code here
-    List <Contact> conList = [SELECT Id, AccountId, Account.Name FROM Contact WHERE Id =:c.Id LIMIT 1];
-    List <Opportunity> oppList = [SELECT Id, AccountId, Account.Name FROM Opportunity WHERE Id =:opp.Id LIMIT 1];
+    //List <Contact> conList = [SELECT Id, AccountId, Account.Name FROM Contact WHERE Id =:c.Id LIMIT 1];
+    //List <Opportunity> oppList = [SELECT Id, AccountId, Account.Name FROM Opportunity WHERE Id =:opp.Id LIMIT 1];
 
     // Set<Id> accountsIds = new Set<Id>();
     // Set<Id> matchingIds = new Set<Id>(); 
@@ -12,7 +12,7 @@ public Boolean sameParent(Contact c, Opportunity opp) {
     //     matchingIds.add(opp.AccountId);
     // }
     // System.debug('The opportunties and contacts that have the same account are:' + matchingIds);
-    if ( conList[0].AccountId == oppList[0].AccountId){
+    if ( c.AccountId == opp.AccountId){
         return true;
     }
     else return false; 
