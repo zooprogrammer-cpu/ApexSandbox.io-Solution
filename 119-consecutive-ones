@@ -1,7 +1,5 @@
 public Integer maxConsecutiveOnes(Integer[] numbers) {
     //code here
-
-    List<Integer> numbers = new List<Integer>{0,1,0,1,1};
     Integer currentCount = 0; 
     Integer maxCount = 0; 
 
