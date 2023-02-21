@@ -1,0 +1,17 @@
+public Set<Integer> setUnion(Set<Integer> set1, Set<Integer> set2) {
+    //code here
+    List<Integer> listInt = new List<Integer>(); 
+    Set<Integer> unionSet = new Set<Integer>(); 
+    for (Integer int1 : set1){
+        listInt.add(int1);
+        for (Integer int2 : set2){
+            listInt.add(int2);
+        }
+    }
+
+    for (Integer int3 : listInt){
+        unionSet.add(int3);
+    }
+    return unionSet;
+
+}
