@@ -14,7 +14,7 @@ public Set<Integer> setUnion(Set<Integer> set1, Set<Integer> set2) {
     // }
     listInt.addAll(set1);
     listInt.addAll(set2);
-    unionSet.add(listInt);
+    unionSet.addAll(listInt);
     return unionSet;
 
 }
