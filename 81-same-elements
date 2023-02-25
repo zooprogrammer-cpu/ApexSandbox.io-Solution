@@ -7,9 +7,8 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
     set2.addAll(nums2);
     set1.sort(); 
     set2.sort(); 
-    set1.retainAll(set2);
-    if (set1.size() == set2.size()){
-        return true; 
-    } else return false; 
+    Boolean result = set1.retainAll(set2);
+    return result; 
+
 
 }
