@@ -1,0 +1,15 @@
+public String employeeEmail(Map<String, String> employeeIdToEmail, String employeeId) {
+    //code here
+    List<Integer>employeeIdList = new List<Integer>();
+    employeeIdList.addAll(employeeIdToEmail.keys()); 
+    if (employeeIdList.contains(employeeId)){
+            return employeeIdToEmail.get(employeeId);
+
+    }
+    else{
+        return 'info@apexsandbox.io';
+    }
+
+
+
+}
