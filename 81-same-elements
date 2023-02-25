@@ -8,7 +8,7 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
     set1.sort(); 
     set2.sort(); 
     Boolean result = set1.retainAll(set2);
-    return result; 
+    return !result; 
 
 
 }
