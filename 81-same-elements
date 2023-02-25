@@ -9,6 +9,7 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
     set2.addAll(nums2);
     Boolean result = set1.retainAll(set2);
     System.debug('Result: ' + result);
+    return result; 
 
 
 }
