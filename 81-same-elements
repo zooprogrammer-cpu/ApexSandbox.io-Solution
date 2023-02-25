@@ -1,7 +1,10 @@
 public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
     //code here
     Set<Integer> set1 = new Set<Integer>(); 
-    Set<Integer> set2 = new Set<Integer>(); 
+    Set<Integer> set2 = new Set<Integer>();
+    Set<Integer> notEqual = new Set<Integer>();
+
+
 
     set1.addAll(nums1);
     set1.sort(); 
@@ -10,12 +13,16 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
 
     for (Integer set1Elem : set1){
         for (Integer set2Elem : set2){
-            if (set1Elem == set2Elem){
-                return true; 
+            if (set1Elem != set2Elem){
+                notEqual.add(set1Elem);
             }
-            else return false; 
         }
     }
+
+    if (notEqual.size() > 0){
+        return false
+    }
+    else return true; 
 
 
 
