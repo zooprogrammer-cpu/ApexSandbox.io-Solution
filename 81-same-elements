@@ -3,14 +3,11 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
     Set<Integer> set1 = new Set<Integer>(); 
     Set<Integer> set2 = new Set<Integer>();
 
-    set1.addAll(nums1); 
-    set2.addAll(nums2);
+    set1.addAll(sort.nums1()); 
+    set2.addAll(sort.nums2());
     set1.retainAll(set2);
     if (set1.size() == set2.size()){
         return true; 
     } else return false; 
-
-
-
 
 }
