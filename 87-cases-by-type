@@ -1,0 +1,16 @@
+public Map<String, List<Case>> casesByType(List<Case> cases) {
+    //code here
+    Map <String, List<Cases>> newMap = new Map <String, List<Cases>>();
+
+    for (Case cs: cases){
+        if (cs.Type !=null){
+            if (newMap.containsKey(cs.Type)){
+                newMap.get(cs.Type, add(cs)); 
+            }
+            else{
+                newMap.put(c.Type, new List<Case>{cs})
+            }
+        newMap.put(cs.Type, cs);
+        }
+    }
+}
