@@ -1,10 +1,11 @@
 public class Stack {
-    
-    List<Integer> intList = new List<Integer>();
-    public void push(Object obj) {
-        //implement push
-        intList.add(obj);
+    List<Object> stackList = new List<Object>(); 
 
+    
+    
+    public void push(Object obj) {
+        stackList.add(obj);
+        //implement push
     }
     
     public Object pop() {
